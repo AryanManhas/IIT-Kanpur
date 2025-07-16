@@ -1,17 +1,90 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
-  "name": "My Dev Env",
-  "image": "mcr.microsoft.com/devcontainers/javascript-node",
-  "features": {
-    "ghcr.io/devcontainers/features/github-cli:1": {}
-  },
-  "postCreateCommand": "npm install",
-  "customizations": {
-    "vscode": {
-      "extensions": [
-        "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
-      ]
-    }
-  },
-  "forwardPorts": [3000]
+	"name": "C++ Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/cpp:0-ubuntu-22.04",
+
+	// Features to add (e.g., CMake, GCC, Clang, GDB, etc.). Optional if the image includes them already.
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/cmake:1": {},
+	// 	"ghcr.io/devcontainers/features/gcc:1": {},
+	// 	"ghcr.io/devcontainers/features/clang:1": {},
+	// 	"ghcr.io/devcontainers/features/gdb:1": {}
+	// },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Run commands after the container is created (e.g., install packages, setup build).
+	// "postCreateCommand": "sudo apt-get update && sudo apt-get install -y make",
+
+	// Custom VS Code settings and extensions
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake",
+				"esbenp.prettier-vscode",
+				"vscode-icons-team.vscode-icons",
+				"wayou.vscode-todo-highlight"
+			],
+			"settings": {
+				"editor.fontSize": 32,
+				"terminal.integrated.fontSize": 24,
+				"editor.wordWrap": "on",
+				"C_Cpp.intelliSenseEngine": "default",
+				"C_Cpp.default.compilerPath": "/usr/bin/g++",
+				"C_Cpp.default.cppStandard": "c++17"
+			}
+		}
+	}
+
+	// Uncomment if you want to run as root.
+	// "remoteUser": "root"
+}
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
+{
+	"name": "C++ Dev Container",
+	"image": "mcr.microsoft.com/devcontainers/cpp:0-ubuntu-22.04",
+
+	// Features to add (e.g., CMake, GCC, Clang, GDB, etc.). Optional if the image includes them already.
+	// "features": {
+	// 	"ghcr.io/devcontainers/features/cmake:1": {},
+	// 	"ghcr.io/devcontainers/features/gcc:1": {},
+	// 	"ghcr.io/devcontainers/features/clang:1": {},
+	// 	"ghcr.io/devcontainers/features/gdb:1": {}
+	// },
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Run commands after the container is created (e.g., install packages, setup build).
+	// "postCreateCommand": "sudo apt-get update && sudo apt-get install -y make",
+
+	// Custom VS Code settings and extensions
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake",
+				"esbenp.prettier-vscode",
+				"vscode-icons-team.vscode-icons",
+				"wayou.vscode-todo-highlight"
+			],
+			"settings": {
+				"editor.fontSize": 32,
+				"terminal.integrated.fontSize": 24,
+				"editor.wordWrap": "on",
+				"C_Cpp.intelliSenseEngine": "default",
+				"C_Cpp.default.compilerPath": "/usr/bin/g++",
+				"C_Cpp.default.cppStandard": "c++17"
+			}
+		}
+	}
+
+	// Uncomment if you want to run as root.
+	// "remoteUser": "root"
 }
