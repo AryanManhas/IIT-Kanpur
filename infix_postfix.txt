@@ -1,0 +1,51 @@
+a = b + c + d
+a + [bc*] + d
+[ abc *+ ] + d
+abc *+ d +
+
+(x / y) + (x + w)
+[xy /] +  [xw*]
+xy/xw*+
+
+(m/n) + p
+[mn/] + p
+mn/p+
+
+(m-n) + (p+q)
+[mn-]
+
+
+
+((p+q)/r)*s
+((pq+)r/)s*
+pq+r/s*
+
+((c*d))-(e/f)+(g- h)
+(cd*)-(ef/)+(gh-)
+(cd*ef/-)+(gh-)
+cd*ef/-gh-+
+
+
+Two operator with same procedure cost stay together in 4 stack
+Operator with less procedure can't stay after the operator with higher procedure
+ 
+
+ Exp    Stack   Postfix
+ a              a
+ a      *       a
+ b      **      ab
+ *      **      ab
+ c      **      abc
+ +      +       abc*+
+ d      +       abc*+d
+                abc*+d+
+
+(m/n) + p
+Exp     Stack   Postfix
+(       (       (
+(       (       m
+/       (/      m
+n       (/      mn
+)               mn/
++       +       mn/p
+p       +       mn/p+  
