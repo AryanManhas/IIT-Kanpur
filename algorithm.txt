@@ -1,0 +1,47 @@
+What is Greedy Algorithm?
+    A Greedy ALgorithm is an approach for solving problems by making the locally optimal choice at each step, with the hope that tree local choices will lead to a globally optimal solution.
+
+    In other words:
+        - Take the best possible choice at the current moment -- repeat -- until the problems is solved.
+
+    Gready choice property:
+        - THe problem has the greedy choice property.
+        - The problem has optimal Substructure.
+        - You need an efficient solution (usually faster than brute force or dp).
+
+    Optimal Substructure:
+        A Problem has an optimal solution that contains optimal solutions to its subproblems.
+
+Example:
+    1. You're given a list of activities 
+
+Graph: is a non-linear data structure consisting of nodes and edges.
+
+
+
+Real life examples:
+
+1. Social networks
+
+2. Google maps
+
+3. network Topologies
+
+Main types of graph:
+
+1. Undirected
+
+2. Directed
+
+3. Weighted
+
+4. Cyclic
+
+Representation of graph:
+
+1. Adjacency matrix: A 2D matrix array of size V x v , where V is the number of Vertices.
+
+- matrix[i][j] = 1: Indicates an edge exists between vertex i and j.
+
+- matrix[i][j] = 0; Indicates no edge exists between vertex i and j.
+

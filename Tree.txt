@@ -31,4 +31,19 @@ Bianry Seach Tree(BST):
 Properties of Binary Tree:
         - Maximum node at level L = 2^L
         - Maximum nodes in a tree of height H is 2H-1.
-        - 
+
+        Balanced Tree:
+                Difference between height of left subtree and height of right subtree is called Balanced Factor.
+                        Balacned Factor = h(L-tree) - h(R-tree)
+
+        AVL Tree:
+                A non empty binary tree T is an AVL Tree if given TL and TR to be the left and right subtree of T and h(TL) and h(TR) to be the heigths of subtree TL and TR repsctively.
+
+                - For AVL tree th Balanced factor of  a node can be either -1 , 0 and 1.
+                - An empty binary tree is and AVL tree.
+                - An AVL tree always be a binary tree and Balanced too.
+                - The tree was introduced by Adelson Velshi and Landis (AVL).
+
+                (Binary Tree(BST(AVL)))
+
+                
